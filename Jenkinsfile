@@ -9,7 +9,7 @@ node {
     stage('Build image') {
         /*  builds the actual image */
         
-        app = docker.build("getintodevops/hellonode")
+        app = docker.build("hellonode")
     }
 
     stage('Test image') {
