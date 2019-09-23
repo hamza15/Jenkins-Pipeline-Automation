@@ -10,7 +10,9 @@ pipeline {
             }
         }
         stage('post build') {
-        	echo 'Complete'
+            steps {
+        		echo 'Complete'
+        	}	
         }
     }
 }
