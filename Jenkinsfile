@@ -12,7 +12,9 @@ pipeline {
         }
         stage('post build') {
             steps {
-        		echo 'Complete'
+        		sh '''
+                	docker ps
+                '''	
         	}	
         }
     }
