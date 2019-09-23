@@ -5,7 +5,8 @@ pipeline {
             steps {
                 sh '''
                 	export DOCKER_HOST=tcp://172.17.0.3:2375
-                	docker ps
+                	docker build -t hellonode .
+                	docker images
                 '''	
             }
         }
