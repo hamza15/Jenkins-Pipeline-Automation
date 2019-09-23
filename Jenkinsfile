@@ -8,7 +8,7 @@ node('master') {
 
     stage('Build image') {
         /*  builds the actual image */
-        
+        sh 'export DOCKER_HOST=tcp://172.17.0.3:2375'
         app = docker.build("hellonode")
     }
 
